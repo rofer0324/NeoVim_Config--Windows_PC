@@ -43,13 +43,13 @@ call plug#begin('~/.vim/plugged')
 Plug 'sheerun/vim-polyglot'
 Plug 'morhetz/gruvbox'
 Plug 'shinchu/lightline-gruvbox.vim'
-" "IDE
-Plug 'easymotion/vim-easymotion'
+					" "IDE
+					"Plug 'easymotion/vim-easymotion'
  "Nerdtree
 Plug 'preservim/nerdtree'
-"Navigate with C-h C-l C-j C-k
-"Navegar con C-h C-l C-j C-k
-Plug 'christoomey/vim-tmux-navigator'
+					"Navigate with C-h C-l C-j C-k
+					"Navegar con C-h C-l C-j C-k
+					"Plug 'christoomey/vim-tmux-navigator'
 "Airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -66,15 +66,9 @@ Plug 'junegunn/fzf.vim',
 call plug#end()
 
 source $HOME/AppData/Local/nvim/plugins/plug-config.vim
+
 "--------------------------------Plugins Config--------------------------------------------
-"save file
-"guardar archivo
-nmap <leader>w :w <CR>
-"cerrar ventana
-"close current  window
-nmap <C-w> :q <CR>
-nmap <leader>q :q <CR>
-nmap <leader>so :so%<CR>
+
 "search commands 
 "comandos de busqueda
 nmap <leader>gs  :CocSearch
@@ -82,12 +76,11 @@ nmap <leader>fs :FZF<CR>
 nmap <leader>rg :Rg<CR>
 
 
-"abrir Nerdtree
 "open nerdtree
-nmap <Leader>nt :NERDTreeFind<CR>
-"Buscar dos carácteres con easymotion
-"Search for two chars with easymotion
-nmap <Leader>s <Plug>(easymotion-s2)
+nnoremap <C-n> :NERDTree<CR>
+"close nerdtree
+nnoremap <C-t> :NERDTreeToggle<CR>
+
 
 " TAB in general mode will move to text buffer
 " TAB en modo normal se moverá al siguiente buffer
@@ -98,6 +91,8 @@ nnoremap <silent> <S-TAB> :bprevious<CR>
 "close buffer
 "cerrar buffer
 nmap <leader>bd :bdelete<CR>
+
+
 "--gruvbox config--
 colorscheme gruvbox
 let g:gruvbox_contrast_dark = "medium"
@@ -136,5 +131,3 @@ let g:lightline = {
 "Cerrar tags automaticamente
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml, *.jsx, *.js, *.py'
 "-----------------------------------------------------------------
-
-
