@@ -10,7 +10,7 @@ https://chocolatey.org/install
  
  THEN
  
- Install NeoVim {
+ Install NeoVim from prowershell {
  
  choco install neovim
  
