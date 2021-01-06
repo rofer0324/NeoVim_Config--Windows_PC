@@ -21,6 +21,11 @@ https://chocolatey.org/install
  
  CREATE this directory in the route AppData\Local: "nvim" and paste the content of this repository in this route.
  
+ then excute nvim init.vim from your cmd and execute:
+ :PlugInstall
+ :PlugUpdate
+ 
+ now this is ready to program
  
  this Config. is inspired from this channel https://www.youtube.com/watch?v=buYfMTbT-DA&t=321s. !!
 
